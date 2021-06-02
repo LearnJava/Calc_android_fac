@@ -18,4 +18,5 @@
     <string name="key_equals">=</string>
     <string name="key_backspace">del</string>
     <string name="calcResult">34 + 46 = 80</string>
+    <string name="key_reset">reset</string>
 </resources>

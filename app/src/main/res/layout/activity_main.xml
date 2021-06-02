@@ -4,18 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#faef81"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <TextView
-        android:id="@+id/textViewForAnswer"
+        android:id="@+id/resultTextView"
         android:layout_width="0dp"
         android:layout_height="70dp"
-        android:hint="@string/calcResult"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        android:gravity="right|center_vertical"
         android:textSize="20sp"
         android:layout_marginTop="20dp"
-        android:textAlignment="center"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:background="#28292a"
         app:layout_constraintStart_toStartOf="@id/key_1"
         app:layout_constraintEnd_toEndOf="@id/key_3"
@@ -34,7 +39,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/key_2"
-        app:layout_constraintTop_toBottomOf="@id/textViewForAnswer"
+        app:layout_constraintTop_toBottomOf="@id/resultTextView"
         app:layout_constraintHorizontal_chainStyle="packed"/>
 
     <androidx.appcompat.widget.AppCompatButton
@@ -50,7 +55,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/key_1"
         app:layout_constraintEnd_toStartOf="@id/key_3"
-        app:layout_constraintTop_toBottomOf="@id/textViewForAnswer" />
+        app:layout_constraintTop_toBottomOf="@id/resultTextView" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/key_3"
@@ -64,7 +69,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/key_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewForAnswer" />
+        app:layout_constraintTop_toBottomOf="@id/resultTextView" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/key_4"
@@ -256,6 +261,21 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/key_divide"
         app:layout_constraintTop_toBottomOf="@id/key_equls" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/key_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/key_reset"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#28292a"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/key_multiply"
+        app:layout_constraintTop_toBottomOf="@id/key_multiply" />
+
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="wrap_content"
