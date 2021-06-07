@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="my_buttons_color">#28292a</color>
+    <color name="default_background">#faef81</color>
 </resources>

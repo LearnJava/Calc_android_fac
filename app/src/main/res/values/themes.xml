@@ -13,4 +13,16 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="MyTheme" parent="Theme.Calc_android_fac">
+        <item name="android:windowBackground">@drawable/ic_as</item>
+        <item name="android:colorBackground">@color/default_background</item>
+        <item name="colorPrimary">@color/default_background</item>
+    </style>
+
+    <style name="MyTheme_dark" parent="Theme.Calc_android_fac">
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:colorBackground">@color/black</item>
+        <item name="android:background">@color/black</item>
+    </style>
 </resources>
