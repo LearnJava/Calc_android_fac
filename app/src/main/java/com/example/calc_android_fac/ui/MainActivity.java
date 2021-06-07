@@ -88,7 +88,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initNumberKeys() {
-        Set<Integer> buttons = new HashSet<Integer>(Arrays.asList(R.id.key_1, R.id.key_2, R.id.key_3, R.id.key_4, R.id.key_5, R.id.key_6, R.id.key_7, R.id.key_8, R.id.key_9, R.id.key_0));
+        Set<Integer> buttons = new HashSet<>(Arrays.asList(R.id.key_1, R.id.key_2,
+                R.id.key_3, R.id.key_4, R.id.key_5, R.id.key_6, R.id.key_7, R.id.key_8,
+                R.id.key_9, R.id.key_0));
         for (Integer btn: buttons) {
             findViewById(btn).setOnClickListener(new View.OnClickListener() {
                 @Override
